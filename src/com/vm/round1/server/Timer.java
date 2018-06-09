@@ -8,7 +8,7 @@ public class Timer {
     }
 
     public String getCurrentDateAndTime() throws InterruptedException {
-//        Thread.sleep(1000);
+        Thread.sleep(5000);
         final String dateTime = new Date().toString();
         System.out.println("DateTime found : " + dateTime);
         return dateTime;
