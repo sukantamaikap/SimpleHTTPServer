@@ -1,15 +1,16 @@
 package com.vm.round1.server;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Timer {
 
     public Timer() {
     }
 
-    public String getCurrentTime() {
-        String time = LocalDateTime.now().toString();
-        System.out.println("Current time is : " + time);
-        return time;
+    public String getCurrentDateAndTime() throws InterruptedException {
+//        Thread.sleep(1000);
+        final String dateTime = new Date().toString();
+        System.out.println("DateTime found : " + dateTime);
+        return dateTime;
     }
 }
